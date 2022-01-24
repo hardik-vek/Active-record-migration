@@ -1,0 +1,11 @@
+<h2><%= @book.name %></h2>
+<p><%=@book.price %></p>
+<p><%=@book.author_id %></p>
+
+<ul> 
+<li><%= link_to "Edit", edit_book_path(@book) %></li>
+  <li><%= link_to "Destroy", book_path(@book), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>
