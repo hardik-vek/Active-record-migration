@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'homes#index'
+  # get 'homes/index'
+  resources :authors
+  resources :books
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
